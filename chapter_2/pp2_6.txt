@@ -1,0 +1,6 @@
+A/B.
+    int:
+        0000 0000 0011 0101 0100 0011 0010 0001
+    float:
+        0100 1010 0101 0101 0000 1100 1000 0100
+C. the int matches the float on the foats 3rd byte, shifted 2 bits to the left. 

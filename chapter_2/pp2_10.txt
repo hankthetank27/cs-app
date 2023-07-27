@@ -1,0 +1,4 @@
+init = a ... b
+stp1 = a ^ b ... b
+stp2 = a ^ b ... (a ^ b) ^ b = (b ^ b) ^ a = a
+stp3 = (a ^ b) ^ a = (a ^ a) ^ b = b ... a

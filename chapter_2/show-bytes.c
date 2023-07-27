@@ -34,4 +34,3 @@ int main(){
     show_pointer(pval);
     show_bytes((byte_pointer)s, strlen(s));
 }
-

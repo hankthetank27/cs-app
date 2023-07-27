@@ -1,0 +1,14 @@
+A. 
+    Black - White
+    Blue - Yellow
+    Green - Magenta
+    Cyan - Red
+
+B.
+   0w = Black
+   1w = White
+
+C.
+    Blue | Red = Magenta
+    Magenta & Cyan = Blue
+    Green ^ White = Magenta

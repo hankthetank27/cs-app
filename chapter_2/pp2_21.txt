@@ -1,0 +1,5 @@
+Unsigned -- 1 (casts to eq)
+Signed -- 1 (-2147483647-1 = 0)
+Unsigned -- 0 (-2147483647-1U = 2,415,919,103)
+Signed -- 1
+Unsigned -- 1(-2147483647 = 4294967295)

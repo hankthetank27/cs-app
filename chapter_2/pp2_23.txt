@@ -1,2 +1,17 @@
-fun1(00000076) = 00000076, fun2(00000076) = 00000076
-fun1(87654321)
+fun1(00000076) = 00000076 
+fun2(00000076) = 00000076
+
+fun1(87654321) = (int) ((21000000) >> 24) = (int) 0000021 = 00000021
+fun2(87654321) = ((int) 21000000) >> 24) = (00000021) >> 24 = 00000021
+
+fun1(000000C9) = (int) ((C9000000) >> 24) = 000000C9
+fun2(000000C9) = ((int) C9000000) >> 24) = FFFFFFC9
+
+fun1(EDCBA987) = (int) ((87000000) >> 24) = 00000087
+fun2(EDCBA987) = ((int) 87000000) >> 24) = FFFFFF87
+
+
+Function fun1 extracts a value from the low-order 8 bits of the argument,
+giving an integer ranging between 0 and 255. Function fun2 extracts a value
+from the low-order 8 bits of the argument, but it also performs sign extension.
+The result will be a number between −128 and 127.

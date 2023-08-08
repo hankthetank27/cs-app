@@ -1,0 +1,8 @@
+(a<<k) + b
+k = 0 || 1 || 2 || 3
+a = b
+
+3*a = (a<<1) + a
+
+For each value of k, we can compute two multiples: 2^k (when b is 0) and 2^k + 1
+(when b is a). Thus, we can compute multiples 1, 2, 3, 4, 5, 8, and 9.

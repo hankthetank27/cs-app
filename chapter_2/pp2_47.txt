@@ -1,0 +1,44 @@
+Consider a 5-bit floating-point representation based on the IEEE floating-point
+format, with one sign bit, two exponent bits (k = 2), and two fraction bits (n = 2).
+The exponent bias is 22−1 − 1 = 1.
+
+The table that follows enumerates the entire nonnegative range for this 5-bit
+floating-point representation. Fill in the blank table entries using the following
+directions:
+
+e: The value represented by considering the exponent field to be an unsigned
+integer
+
+E: The value of the exponent after biasing
+
+2E: The numeric weight of the exponent
+
+f : The value of the fraction
+
+M: The value of the significand
+
+2E × M: The (unreduced) fractional value of the number
+
+V : The reduced fractional value of the number
+
+Decimal: The decimal representation of the number
+
+Express the values of 2E, f , M, 2E × M, and V either as integers (when
+possible) or as fractions of the form x/y , where y is a power of 2. You need notfill in entries marked —.
+
+0 00 00 -- e = 0, E = 0, 2^E = 1, f = 0/4, M = 0/4, 2^E * M = 0/4, V = 0/4, D = 0
+0 00 01 -- e = 0, E = 0, 2^E = 1, f = 1/4, M = 1/4, 2^E * M = 1/4, V = 1/4, D = .25 
+0 00 10 -- e = 0, E = 0, 2^E = 1, f = 2/4, M = 2/4, 2^E * M = 2/4, V = 1/2, D = .5
+0 00 11 -- e = 0, E = 0, 2^E = 1, f = 3/4, M = 3/4, 2^E * M = 3/4, V = 3/4, D = .75
+0 01 00 -- e = 1, E = 0, 2^E = 1, f = 0/4, M = 4/4, 2^E * M = 4/4, V = 1/1, D = 1
+0 01 01 -- e = 1, E = 0, 2^E = 1, f = 1/4, M = 5/4, 2^E * M = 5/4, V = 5/4, D = 1.25
+0 01 10 -- e = 1, E = 0, 2^E = 1, f = 2/4, M = 6/4, 2^E * M = 6/4, V = 3/2, D = 1.5
+0 01 11 -- e = 1, E = 0, 2^E = 1, f = 2/4, M = 7/4, 2^E * M = 7/4, V = 7/4, D = 1.75
+0 10 00 -- e = 2, E = 1, 2^E = 2, f = 0/4, M = 4/4, 2^E * M = 8/4, V = 2/1, D = 2
+0 10 01 -- e = 2, E = 1, 2^E = 2, f = 1/4, M = 5/4, 2^E * M = 10/4, V = 5/2, D = 2.5
+0 10 10 -- e = 2, E = 1, 2^E = 2, f = 2/4, M = 6/4, 2^E * M = 12/4, V = 3/1, D = 3
+0 10 11 -- e = 2, E = 1, 2^E = 2, f = 3/4, M = 7/4, 2^E * M = 14/4, V = 7/2, D = 3.5
+0 11 00 -- Inf
+0 11 01 -- NaN
+0 11 10 -- NaN
+0 11 11 -- NaN

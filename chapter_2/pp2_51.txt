@@ -1,0 +1,15 @@
+We saw in Problem 2.46 that the Patriot missile software approximated 0.1 as x =
+0.00011001100110011001100.
+
+Suppose instead that they had used IEEE round-to-even mode to determine an approximation x to 0.1 with 23 bits to the right of
+the binary point.
+
+A. What is the binary representation of x?
+    1/10 = 0.00011001100110011001101
+    This answer was somewhat unintuitve to me at first, as its based on the assumption that 
+    the binary representation of 1/10 is nonterminating, therefor it's implied that the following
+    two digits are "11", rather than refering to the the 23 bit representation of 1/10 given.
+
+B. What is the approximate decimal value of x − 0.1?
+    0?
+
